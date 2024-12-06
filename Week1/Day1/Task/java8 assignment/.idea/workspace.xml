@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0465c96a-d760-476c-95b3-f4c0a617ea0f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/.idea/java--8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/src/main/java/com/fawry/ExampleClasss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/src/main/java/com/fawry/ExampleInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/src/main/java/com/fawry/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/src/main/java/com/fawry/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/src/main/java/com/fawry/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Session/java8-code/java--8/src/main/java/com/fawry/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/java8 assignment.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java8/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java8/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java8/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java8/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java8/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java8/src/main/java/org/example/LambdaExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java8/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java8/src/main/java/org/example/StreamsExample.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2po8Q3QeI6G3LGyO9HUdIZnnUdo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LambdaExample.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.StreamsExample.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Learning/REPOs/Master/Java SE/(Lambda&Streams)task",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0465c96a-d760-476c-95b3-f4c0a617ea0f" name="Changes" comment="" />
+      <created>1733421051025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733421051025</updated>
+      <workItem from="1733421052435" duration="564000" />
+      <workItem from="1733447344652" duration="10127000" />
+      <workItem from="1733498985142" duration="6359000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
