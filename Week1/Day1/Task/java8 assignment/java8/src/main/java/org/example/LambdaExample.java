@@ -33,6 +33,7 @@ public class LambdaExample {
 
 
 
+
         banner("Listing users with age > 5 sorted by name");
         // TODO With functional interfaces declared
        Predicate<User>ageMoreThan5 = new Predicate<User>() {
@@ -75,7 +76,8 @@ public class LambdaExample {
 
         banner("Listing users with age < 10 sorted by age - lambda");
         // TODO With functional interfaces used directly
-        repository.select(user->user.age<10, Comparator.comparing(user->user.age));
+        repository.select(user->user.age<10,
+                Comparator.comparing(user->user.age));
 
 
 

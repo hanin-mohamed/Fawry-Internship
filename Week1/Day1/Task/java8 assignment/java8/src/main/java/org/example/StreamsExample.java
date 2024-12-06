@@ -7,6 +7,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public class StreamsExample {
@@ -51,12 +52,11 @@ public class StreamsExample {
 
         banner("Active books for all authors");
         // TODO With functional interfaces declared
-        Function<Author,List<Book>> activeBooks = new Function<Author, List<Book>>(){
+        Function<Author,Stream<Book>> activeBooks = new Function<Author, Stream<Book>>(){
             @Override
-            public List<Book> apply(Author author){
+            public Stream<Book> apply(Author author){
                 return author.books.stream()
-                        .filter(book -> book.published)
-                        .collect(Collectors.toList());
+                        .filter(book -> book.published);
             }
         };
         Consumer<Book> bookPrintConsumer = new Consumer<Book>() {
@@ -66,8 +66,7 @@ public class StreamsExample {
             }
         };
         authors.stream()
-                .map(activeBooks)
-                .flatMap(book->book.stream())
+                .flatMap(activeBooks)
                 .forEach(bookPrintConsumer);
 
         banner("Active books for all authors - lambda");
@@ -84,15 +83,6 @@ public class StreamsExample {
             @Override
             public List<Book> apply(Author author){
                 return author.books;
-            }
-        };
-        Function<List<Book>,Double> averagePrice = new Function<List<Book>, Double>() {
-            @Override
-            public Double apply(List<Book> books) {
-                return books.stream()
-                        .mapToDouble(book -> book.price)
-                        .average()
-                        .orElse(0);
             }
         };
      double avg= authors.stream()
@@ -125,8 +115,7 @@ public class StreamsExample {
             }
         };
         authors.stream()
-                        .filter(activeAuthorPredicate)
-                        .filter(authorWithActiveBooks)
+                        .filter(activeAuthorPredicate.and(authorWithActiveBooks))
                         .forEach(authorPrintConsumer);
 
         banner("Active authors that have at least one published book - lambda");
