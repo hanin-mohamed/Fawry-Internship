@@ -4,18 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class ProductRepository {
+public class ProductService {
     private static List<Product> products = new ArrayList<>();
-
+    {
+        products.add(new Product("Phone", 100.0));
+        products.add(new Product("Laptop", 450.0));
+        products.add(new Product("Tablet", 1200.0));
+    }
 
     // All Products
     public List<Product> getProducts() {
         return products;
     }
+
     // Add Product
-    public String addProduct(Product product) {
-        if (findProductByName(product.getName())==null) {
-            products.add(product);
+    public String addProduct(String name, double  price) {
+        if (findProductByName(name)==null) {
+            products.add(new Product(name, price));
             return "Product added successfully";
         }
         return "Product already exists";
@@ -34,7 +39,7 @@ public class ProductRepository {
     // Search for Product
     public Product findProductByName(String name) {
         return products.stream()
-                .filter(product -> product.getName() == name)
+                .filter(product -> product.getName().equals(name))
                 .findFirst().orElse(null);
     }
 

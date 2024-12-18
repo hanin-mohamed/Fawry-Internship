@@ -1,54 +1,61 @@
 package com.example.jakarta.hello;
 
-
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
-
-import java.util.List;
+import jakarta.ws.rs.core.Response;
 
 @Path("/products")
 public class ProductController {
-    private final ProductRepository productRepository = new ProductRepository();
-
+    private final ProductService productService = new ProductService();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Product> getProducts() {
-        return productRepository.getProducts();
+    public Response getProducts() {
+        return Response.ok(productService.getProducts()).build();
     }
 
     @POST
-    @Path("/addProduct")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public void addNewProduct(Product product) {
-        productRepository.addProduct(product);
+    public Response addNewProduct(Product product) {
+        String response = productService.addProduct(product.getName(), product.getPrice());
+        if (response.equals("Product added successfully")) {
+            return Response.status(Response.Status.CREATED).entity(response).build();
+        }
+        return Response.status(Response.Status.BAD_REQUEST).entity(response).build();
     }
-
 
     @DELETE
     @Path("/delete/{name}")
     @Produces(MediaType.APPLICATION_JSON)
-    public void deleteProductByName(@PathParam("name") String name) {
-        Product product = productRepository.getProducts().stream().filter(p -> p.getName() == name).findFirst().orElse(null);
-        if (product != null) {
-            productRepository.deleteProductByName(name);
+    public Response deleteProductByName(@PathParam("name") String name) {
+        String response = productService.deleteProductByName(name);
+        if (response.equals("Product deleted successfully")) {
+            return Response.ok(response).build();
         }
+        return Response.status(Response.Status.NOT_FOUND).entity(response).build();
     }
-    @POST
-    @Path("/update")
-    @Produces(MediaType.APPLICATION_JSON)
+
+    @PUT
+    @Path("/update}")
     @Consumes(MediaType.APPLICATION_JSON)
-    public String updateProduct(Product product) {
-        return productRepository.updateProduct(product);
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response updateProduct(Product product) {
+        String response = productService.updateProduct(product);
+        if (response.equals("Product updated successfully")) {
+            return Response.ok(response).build();
+        }
+        return Response.status(Response.Status.NOT_FOUND).entity(response).build();
     }
 
     @GET
-    @Path("/find/{name}")
+    @Path("/{name}")
     @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_JSON)
-    public Product searchProduct(@PathParam("name") String name) {
-        return productRepository.findProductByName(name);
+    public Response searchProduct(@PathParam("name") String name) {
+        Product product = productService.findProductByName(name);
+        if (product != null) {
+            return Response.ok(product).build();
+        }
+        return Response.status(Response.Status.NOT_FOUND).entity("Product not found").build();
     }
 }
-
